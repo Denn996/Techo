@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Gabriel Hospital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ===== Reset ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; }
+
+        /* ===== Navbar ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #0d253f;
+            color: #fff;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .logo-container .hospital-name {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #00bfff;
+        }
+        .btn-primary {
+            background-color: #00bfff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .btn-primary:hover { background-color: #009acd; }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 50px;
+            background-color: #808080;
+            color: #fff;
+        }
+        .hero-content { max-width: 600px; }
+        .hero-content h1 { font-size: 3rem; margin-bottom: 20px; }
+        .hero-content p { font-size: 1.1rem; margin-bottom: 30px; }
+        .hero-buttons button,
+        .hero-buttons a {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .hero-buttons .book-btn { background-color: #00bfff; color: #fff; }
+        .hero-buttons .emergency-btn {
+            background-color: transparent;
+            border: 2px solid #00bfff;
+            color: #00bfff;
+        }
+        .hero-buttons .register-btn { background-color: #00bfff; color: #fff; }
+        .hero-buttons button:hover, .hero-buttons a:hover { opacity: 0.9; }
+
+        /* ===== Stats Box ===== */
+        .stats-box {
+            background-color: #fff;
+            color: #0d253f;
+            padding: 20px 30px;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 200px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .stats-box h2 { font-size: 2rem; margin-bottom: 5px; }
+        .stats-box p { font-weight: 600; }
+
+        /* ===== Hero Image ===== */
+        .hero-image {
+            max-width: 500px;
+            border-radius: 10px;
+        }
+
+        /* ===== Responsive ===== */
+        @media(max-width: 900px){
+            .hero { flex-direction: column; align-items: flex-start; }
+            .stats-box { margin-top: 30px; }
+            .hero-image { max-width: 100%; margin-top: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Hospital Logo">
+        <span class="hospital-name">St. Gabriel's Hospital</span>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="staff.html">Staff</a>
+        <a href="patients.html">Patients</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-primary">Login</a>
+        <a href="register.html" class="btn-primary">Register</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <p>TRUSTED HEALTHCARE SINCE 1985</p>
+        <h1>Compassionate Care for Every Patient</h1>
+        <p>Providing world-class medical services with cutting-edge technology and a team of dedicated healthcare professionals committed to your wellbeing.</p>
+        <div class="hero-buttons">
+            <button class="book-btn">Book Appointment</button>
+            <button class="emergency-btn">Emergency Services</button>
+            <a href="register.html" class="register-btn">Register Now</a>
+        </div>
+    </div>
+    <div class="stats-box">
+        <h2>2,500+</h2>
+        <p>Patients Treated Monthly</p>
+    </div>
+</section>
+
+<!-- Hero Image -->
+<div style="text-align:center; margin:50px 0;">
+    <img src="images/hospital_hero.jpg" alt="Hospital Building" class="hero-image">
+</div>
+
+</body>
+</html>

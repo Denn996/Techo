@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - St Gabriel Hospital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; }
+
+        /* ===== Navbar ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #0d253f;
+            color: #fff;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .logo-container .hospital-name {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #00bfff;
+        }
+        .btn-primary {
+            background-color: #00bfff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .btn-primary:hover { background-color: #009acd; }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #fff;
+        }
+        .hero h1 { font-size: 2.5rem; color: #0d253f; }
+
+        /* ===== Services Cards ===== */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #f9f5ee;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card h3 { color: #0d253f; margin-bottom: 10px; }
+        .card p { margin-bottom: 10px; color: #333; font-size: 0.95rem; }
+        .card span { color: #00bfff; font-weight: 600; }
+
+        /* ===== Responsive ===== */
+        @media(max-width: 950px) {
+            .cards-container { flex-direction: column; align-items: center; }
+            .card { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Hospital Logo">
+        <span class="hospital-name">St. Gabriel's Hospital</span>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="staff.html">Staff</a>
+        <a href="patients.html">Patients</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-primary">Login</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Comprehensive Medical Services</h1>
+</section>
+
+<!-- Services Cards -->
+<section class="cards-container">
+    <div class="card">
+        <h3>Emergency Care</h3>
+        <p>24/7 emergency medical services with state-of-the-art trauma care and rapid response teams.</p>
+        <span>Available: 24/7</span>
+    </div>
+    <div class="card">
+        <h3>Cardiology</h3>
+        <p>Comprehensive heart care including diagnostics, interventional procedures, and cardiac rehabilitation.</p>
+        <span>Available: Mon-Sat</span>
+    </div>
+    <div class="card">
+        <h3>Neurology</h3>
+        <p>Advanced neurological care for brain, spine, and nervous system disorders with cutting-edge technology.</p>
+        <span>Available: Mon-Fri</span>
+    </div>
+    <div class="card">
+        <h3>Pediatrics</h3>
+        <p>Specialized care for infants, children, and adolescents with a child-friendly environment.</p>
+        <span>Available: Mon-Fri</span>
+    </div>
+</section>
+
+</body>
+</html>

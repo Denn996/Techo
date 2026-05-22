@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - St Gabriel Hospital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; }
+
+        /* ===== Navbar ===== */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #0d253f;
+            color: #fff;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-container img {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .logo-container .hospital-name {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        .nav-links a {
+            margin-left: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #00bfff;
+        }
+        .btn-primary {
+            background-color: #00bfff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .btn-primary:hover { background-color: #009acd; }
+
+        /* ===== Hero Section ===== */
+        .hero {
+            background-color: #808080;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        .hero p { font-size: 1.2rem; }
+
+        /* ===== Cards Section ===== */
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #f9f5ee;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card p {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* ===== Responsive ===== */
+        @media(max-width: 950px) {
+            .cards-container { flex-direction: column; align-items: center; }
+            .card { width: 90%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Hospital Logo">
+        <span class="hospital-name">St. Gabriel's Hospital</span>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="staff.html">Staff</a>
+        <a href="patients.html">Patients</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-primary">Login</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>About St. Gabriel's Hospital</h1>
+    <p>Delivering compassionate and advanced healthcare services since 1985.</p>
+</section>
+
+<!-- Cards Section -->
+<section class="cards-container">
+    <div class="card">
+        <img src="mis.jpg" alt="Hospital Room">
+        <p>State-of-the-art hospital rooms for patient comfort.</p>
+    </div>
+    <div class="card">
+        <img src="medical staff.png" alt="Medical Staff">
+        <p>Experienced medical staff dedicated to your wellbeing.</p>
+    </div>
+    <div class="card">
+        <img src="medical equipment.png" alt="Medical Equipment">
+        <p>Advanced medical equipment for accurate diagnosis and treatment.</p>
+    </div>
+</section>
+
+</body>
+</html>

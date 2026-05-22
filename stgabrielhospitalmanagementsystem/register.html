@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - St Gabriel Hospital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #0d253f;
+            color: #fff;
+        }
+        .logo-container { display: flex; align-items: center; }
+        .logo-container img { width: 50px; margin-right: 10px; }
+        .logo-container .hospital-name { font-weight: 700; font-size: 1.5rem; }
+        .nav-links a { margin-left: 20px; color: #fff; text-decoration: none; font-weight: 500; }
+        .nav-links a:hover, .nav-links a.active { color: #00bfff; }
+        .btn-primary { background-color: #00bfff; padding: 8px 15px; border-radius: 5px; color: #fff; font-weight: 600; text-decoration: none; }
+        .btn-primary:hover { background-color: #009acd; }
+
+        /* Hero Section */
+        .hero { text-align: center; padding: 60px 20px; background-color: #808080; color: #fff; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+
+        /* Form Container */
+        .form-container {
+            max-width: 400px;
+            margin: 30px auto;
+            background: #f9f5ee;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .form-container img { width: 100px; display: block; margin: 0 auto 20px; }
+        .form-container input { width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        .form-container button { width: 100%; background-color: #00bfff; color: #fff; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-weight: 600; }
+        .form-container button:hover { background-color: #009acd; }
+        .form-container p { text-align: center; margin-top: 15px; }
+        .form-container a { color: #00bfff; text-decoration: none; }
+
+        /* Hero Image */
+        .hero-image { width: 100%; max-width: 500px; margin: 30px auto; display: block; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Hospital Logo">
+        <span class="hospital-name">St. Gabriel's Hospital</span>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="staff.html">Staff</a>
+        <a href="patients.html">Patients</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-primary">Login</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Create Your Account</h1>
+    <p>Register to access appointments, test results, and medical records.</p>
+</section>
+
+<!-- Hero Image -->
+<img src="logo.png" alt="Register Hero Image" class="hero-image">
+
+<!-- Registration Form -->
+<section>
+    <div class="form-container">
+        <img src="logo.png" alt="Register Icon">
+        <form action="backend/register.php" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</section>
+
+</body>
+</html>

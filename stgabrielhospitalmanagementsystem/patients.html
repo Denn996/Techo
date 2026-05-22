@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients - St Gabriel Hospital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; }
+
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; background-color: #0d253f; color: #fff; }
+        .logo-container { display: flex; align-items: center; }
+        .logo-container img { width: 50px; margin-right: 10px; }
+        .logo-container .hospital-name { font-weight: 700; font-size: 1.5rem; }
+        .nav-links a { margin-left: 20px; color: #fff; text-decoration: none; font-weight: 500; }
+        .nav-links a:hover, .nav-links a.active { color: #00bfff; }
+        .btn-primary { background-color: #00bfff; padding: 8px 15px; border-radius: 5px; color: #fff; font-weight: 600; text-decoration: none; }
+        .btn-primary:hover { background-color: #009acd; }
+
+        .hero { text-align: center; padding: 80px 20px; background-color: #808080; color: #fff; }
+        .hero h1 { font-size: 2.5rem; }
+        .hero p { font-size: 1.2rem; }
+
+        .cards-container { display: flex; justify-content: center; gap: 20px; padding: 50px 20px; flex-wrap: wrap; }
+        .card { background-color: #f9f5ee; border-radius: 10px; overflow: hidden; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center; }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card h3 { margin: 15px 0 10px; }
+        .card p { padding: 0 15px 15px; }
+
+        @media(max-width: 950px) { .cards-container { flex-direction: column; align-items: center; } .card { width: 90%; } }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" alt="Hospital Logo">
+        <span class="hospital-name">St. Gabriel's Hospital</span>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="staff.html">Staff</a>
+        <a href="patients.html" class="active">Patients</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-primary">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Patient Portal</h1>
+    <p>Access your medical records, appointments, and test results.</p>
+</section>
+
+<section class="cards-container">
+    <div class="card">
+        <img src="patient 1.png" alt="Patient 1">
+        <h3>John Smith</h3>
+        <p>Admitted for routine check-up.</p>
+    </div>
+    <div class="card">
+        <img src="patient2.jpg" alt="Patient 2">
+        <h3>Mary Jane</h3>
+        <p>Recovering from surgery.</p>
+    </div>
+    <div class="card">
+        <img src="patient3.jpg" alt="Patient 3">
+        <h3>David Lee</h3>
+        <p>Undergoing treatment for heart care.</p>
+    </div>
+</section>
+
+</body>
+</html>
